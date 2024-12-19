@@ -1,4 +1,4 @@
-import { TitleProps } from "@/app/Props/props"
+import { TitleProps } from "@/app/props/props"
 
 export default function Title({ className, textContent} : TitleProps){
     return(

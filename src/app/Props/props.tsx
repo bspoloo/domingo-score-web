@@ -8,3 +8,8 @@ export type RedirectionProps = {
     text : string
     URI : string
 }
+export type ImageProps = {
+    URI: string
+    alt : string
+    size: number
+}

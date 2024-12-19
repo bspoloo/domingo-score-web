@@ -1,4 +1,4 @@
-import { RedirectionProps } from "@/app/Props/props";
+import { RedirectionProps } from "@/app/props/props";
 import { redirect } from "next/navigation";
 
 

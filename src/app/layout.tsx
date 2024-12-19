@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { UserProvider } from "@auth0/nextjs-auth0/client";
+import Footer from "./atomic/organisms/footer";
+import Header from "./atomic/organisms/header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +29,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex-col justify-center items-center bg-slate-[#2f40ac]`}>
         <UserProvider>
+          <Header/>
           {children}
+          <Footer />
         </UserProvider>
       </body>
     </html>
